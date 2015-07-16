@@ -1,0 +1,4 @@
+<h2>All Contacts</h2>
+<% @contacts.each do |contact| %>
+		<li><a href="/contacts/<%= contact[:name] %>"><%= contact[:name] %></a>: <%= contact[:number] %></li>
+	<% end %>

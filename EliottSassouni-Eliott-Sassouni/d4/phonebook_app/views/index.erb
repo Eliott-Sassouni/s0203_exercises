@@ -1,0 +1,8 @@
+<h1>Eliott's Phonebook</h1>
+<a href="/contacts">View all contacts</a>
+
+<ul>
+	<% @contacts.each do |contact| %>
+		<li><a href="/contacts/<%= contact[:name] %>">See <%= contact[:name] %></a></li>
+	<% end %>
+</ul>
