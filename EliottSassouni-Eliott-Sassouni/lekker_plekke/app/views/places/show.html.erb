@@ -1,0 +1,9 @@
+<h1><%= @place.name %></h1>
+
+<p>Rating: <%= @place.rating %></p>
+
+<p>Address: <%= @place.address %></p>
+
+
+<%= link_to 'Edit', edit_place_path(@place) %> |
+<%= link_to 'Back', places_path %>

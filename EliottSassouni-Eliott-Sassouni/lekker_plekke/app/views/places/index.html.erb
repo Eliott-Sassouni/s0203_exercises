@@ -1,0 +1,8 @@
+<h1>The Coolest Spots in Cape Town</h1>
+<h3>As told by Eliott Sassouni</h3>
+
+<% @places.each do |place| %>
+	<p>
+		<%= link_to place.name, place_path(place) %>
+	</p>
+<% end %>
