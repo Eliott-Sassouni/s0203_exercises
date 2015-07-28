@@ -1,0 +1,19 @@
+<h1>TA Booking</h1>
+
+<p>
+  <strong>Student:</strong>
+  <%= @booking.student %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @booking.question %>
+</p>
+
+<p>
+  <strong>Additional Comments:</strong>
+  <%= @booking.additional_comments %>
+</p>
+
+<%= link_to 'Edit', edit_booking_path(@booking) %> |
+<%= link_to 'Back', bookings_path %>

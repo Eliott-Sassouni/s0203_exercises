@@ -1,0 +1,30 @@
+<table>
+  <thead>
+    <tr>
+      <th><h2>Rusk Traits</h2></th>
+    </tr>
+    <tr>
+      <th>Rusk</th>
+      <th>Base</th>
+      <th>Dippable</th>
+      <th>Crunch Factor</th>
+  </thead>
+
+  <tbody>
+    <% @rusks.each do |rusk| %>
+      <tr>
+        <td><%= rusk.base %></td>
+        <td><%= rusk.extras %></td>
+        <td><%= rusk.dippable %></td>
+        <td><%= rusk.crunch_factor %></td>
+        <td><%= link_to 'Show', rusk_path(rusk) %></h2></td>
+        <td><%= link_to 'Edit', edit_rusk_path(rusk) %></td>
+        <td><%= link_to 'Question answered', rusk_path(rusk), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<p><%= link_to 'New Rusk', new_rusk_path %></p>

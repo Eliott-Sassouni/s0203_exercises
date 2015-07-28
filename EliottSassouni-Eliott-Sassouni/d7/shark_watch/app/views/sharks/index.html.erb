@@ -1,0 +1,29 @@
+<table>
+  <thead>
+    <tr>
+      <th><h2>Shark Traits</h2></th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>Size</th>
+      <th>Gender</th>
+      <th>Danger Level</th>
+  </thead>
+
+  <tbody>
+    <% @sharks.each do |shark| %>
+      <tr>
+        <td><%= shark.name %></td>
+        <td><%= shark.size %></td>
+        <td><%= shark.gender %></td>
+        <td><%= shark.danger_level %></td>
+        <td><%= link_to 'Show', shark_path(shark) %></h2></td>
+        <td><%= link_to 'Edit', edit_shark_path(shark) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<p><%= link_to 'New Shark', new_shark_path %></p>

@@ -1,0 +1,24 @@
+<h1>Shark</h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @shark.name %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @shark.size %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @shark.gender %>
+</p>
+
+<p>
+  <strong>Danger Level:</strong>
+  <%= @shark.deanger_level %>
+</p>
+
+<%= link_to 'Edit', edit_shark_path(@shark) %> |
+<%= link_to 'Back', sharks_path %>

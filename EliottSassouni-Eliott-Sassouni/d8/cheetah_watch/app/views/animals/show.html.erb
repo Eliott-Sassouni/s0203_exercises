@@ -1,0 +1,17 @@
+<h1>This is <%= @animal.name %>'s page!</h1>
+
+<h2><%= @animal.species %></h2>
+
+<p>This animal is <%= @animal.diet %></p>
+
+<p>It is colored <%= @animal.color %></p>
+
+<p>It lives in <%= @animal.region %></p>
+
+<p>It weighs <%= @animal.size %> lbs</p>
+
+<p>It is <%= @animal.age %> years old</p>
+
+<p>This animal is at the <%= @animal.shelter.name %> shelter</p>
+
+<p><%= link_to "Animal List", animals_path %></p>

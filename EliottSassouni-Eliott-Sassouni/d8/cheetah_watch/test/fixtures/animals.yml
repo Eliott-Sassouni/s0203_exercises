@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  species: MyString
+  diet: MyString
+  size: 1
+  color: MyString
+  region: MyString
+  age: 1
+  name: MyString
+
+two:
+  species: MyString
+  diet: MyString
+  size: 1
+  color: MyString
+  region: MyString
+  age: 1
+  name: MyString

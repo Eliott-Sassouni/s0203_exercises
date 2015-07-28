@@ -1,0 +1,34 @@
+<%= form_for(@rusk) do |f| %>
+  <% if @rusk.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rusk.errors.count, "error") %> prohibited this rusk from being saved:</h2>
+
+      <ul>
+      <% @rusk.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :base %><br>
+    <%= f.text_field :base %>
+  </div>
+  <div class="field">
+    <%= f.label :extras %><br>
+    <%= f.text_field :extras %>
+  </div>
+  <div class="field">
+    <%= f.label :dippable %><br>
+    <%= f.text_field :dippable %>
+  </div>
+  <div class="field">
+    <%= f.label :crunch_factor %><br>
+    <%= f.text_field :crunch_factor %>
+  </div>
+ 
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

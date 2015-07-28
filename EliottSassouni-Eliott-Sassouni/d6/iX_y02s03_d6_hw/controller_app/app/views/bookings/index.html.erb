@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <tr>
+      <th><h2>TA Queue</h2></th>
+    </tr>
+    <tr>
+      <th>Student</th>
+      <th>Question</th>
+      <th>Additional comments</th>
+  </thead>
+
+  <tbody>
+    <% @bookings.each do |booking| %>
+      <tr>
+        <td><%= booking.student %></td>
+        <td><%= booking.question %></td>
+        <td><%= booking.additional_comments %></td>
+        <td><%= link_to 'Show', booking_path(booking) %></h2></td>
+        <td><%= link_to 'Edit', edit_booking_path(booking) %></td>
+        <td><%= link_to 'Question answered', booking_path(booking), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<p><%= link_to 'New Booking', new_booking_path %></p>
